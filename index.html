@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính BMI</title>
+</head>
+<body>
+    <script>
+        let hei= parseFloat(prompt('Nhập chiều cao (m)'));
+        let wei= parseFloat(prompt('Nhập cân nặng (kg)'));
+        let bmi = wei/(hei*hei);
+        if (bmi < 18.5) {
+            alert('Phân loại: Thiếu cân');
+        } else if (bmi < 25) {
+            alert('Phân loại: Bình thường');
+        } else if (bmi <30) {
+            alert('Phân loại: Thừa cân');
+        } else alert('Phân loại: Béo phì');
+    </script>
+    
+</body>
+</html>
